@@ -1,0 +1,198 @@
+@import url("https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css");
+.form {
+  font-family: Arial, Helvetica, sans-serif;
+  width: 650px;
+  min-height: 100vh;
+  padding: 0 25px;
+}
+
+label .info {
+  padding: 1px 4px;
+  background-color: cadetblue;
+  font-size: 8px;
+  border-radius: 50%;
+  color: #fff;
+  background-color: #686358;
+  font-family: serif;
+  position: relative;
+  top: -3px;
+}
+.star {
+  color: red;
+  position: relative;
+  top: 3px;
+}
+.form .title {
+  font-size: 20px;
+  text-align: center;
+  padding: 10px;
+  border-bottom: 1px solid #cec9be;
+}
+
+span {
+  font-size: 12px;
+  color: #807e7a;
+}
+span b {
+  font-size: 12px;
+  color: #000;
+}
+.row1,
+.row3 {
+  margin-top: 10px;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+label {
+  display: block;
+  margin: 0px 0px 5px 0px;
+  font-size: 12px;
+}
+.row1 .left,
+.row1 .right,
+.row3 .left,
+.row3 .right {
+  min-width: 250px;
+}
+.row1 .left div,
+.row1 .right div {
+  margin: 0px 0px 15px 0px;
+}
+.background {
+  background-color: #ebe6e2;
+}
+.row1 input[type="text"],
+.row1 select,
+.row3 input[type="text"],
+.row3 input[type="search"] {
+  display: block;
+  width: 100%;
+  padding: 7px 10px;
+  border: 2px solid #cec9be;
+  border-radius: 5px;
+  color: #646362;
+}
+
+.row3 input[type="search"] {
+  border: none;
+}
+button[type="submit"] {
+  text-indent: -999px;
+  overflow: hidden;
+  width: 40px;
+  padding: 0;
+  margin: 0;
+  border: 1px solid transparent;
+  border-radius: inherit;
+  background: transparent
+    url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='16' class='bi bi-search' viewBox='0 0 16 16'%3E%3Cpath d='M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z'%3E%3C/path%3E%3C/svg%3E")
+    no-repeat center;
+  cursor: pointer;
+  opacity: 0.7;
+}
+.row2 div {
+  width: 100%;
+}
+.row2 textarea {
+  padding: 10px;
+  width: 100%;
+  padding: 10px;
+  border: 2px solid #cec9be;
+  border-radius: 5px;
+  height: 75px;
+  resize: none;
+  color: #646362;
+  font-family: Arial, Helvetica, sans-serif;
+}
+.row3 .radio {
+  margin-bottom: 12px;
+}
+.row3 input[type="radio"] {
+  vertical-align: middle;
+  width: 15px;
+  height: 15px;
+  padding: 10px;
+}
+.row3 .radio div {
+  display: flex;
+  justify-content: space-between;
+}
+
+.row3 .radio div div {
+  width: 140px;
+}
+.row3 label {
+  margin: 0px 0px 12px 0px;
+}
+.rowrest .row1 .left {
+  min-width: 310px;
+}
+.rowrest .row1 .right {
+  min-width: 250px;
+}
+
+.btnContainer {
+  display: flex;
+  justify-content: flex-end;
+  padding: 10px;
+}
+.btnContainer button {
+  padding: 6px 15px;
+  margin: 0px 5px;
+  border-radius: 4px;
+}
+.custom-file-input {
+  color: transparent;
+}
+.custom-file-input::-webkit-file-upload-button {
+  visibility: hidden;
+}
+.custom-file-input::before {
+  font-family: FontAwesome;
+  content: "\f093  Select Thumbnail";
+  color: black;
+  display: inline-block;
+  background: none;
+  border-radius: 3px;
+  padding: 8px 14px;
+  outline: none;
+  white-space: nowrap;
+  cursor: pointer;
+  text-shadow: 1px 1px #fff;
+  font-weight: 500;
+  font-size: 10pt;
+  vertical-align: middle;
+  color: rgb(31, 83, 253);
+  border: 1px solid #cec9be;
+}
+
+.custom-file-input:hover::before {
+  border-color: black;
+}
+.custom-file-input:active {
+  outline: 0;
+}
+.custom-file-input:active::before {
+  background: -webkit-linear-gradient(top, #e3e3e3, #f9f9f9);
+}
+input[type="file"] {
+  margin-top: 10px;
+}
+
+@media screen and (max-width: 613px) {
+  .form {
+    width: 100%;
+  }
+
+  .row1 .left,
+  .row1 .right,
+  .row3 .left,
+  .row3 .right {
+    min-width: 100%;
+  }
+  .rowrest .row1 .left,
+  .rowrest .row1 .right {
+    min-width: 100%;
+  }
+}
